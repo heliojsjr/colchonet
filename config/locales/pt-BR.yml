@@ -6,9 +6,10 @@ pt-BR:
       title: Editar perfil
     show:
       title: "Perfil: %{user_name}"
-      edit: "Editar perfil"
+      edit: Editar perfil
       location: "Localização: %{location}"
       bio: "Bio: %{bio}"
+      email: E-mail
 
   rooms:
     new:
@@ -20,13 +21,14 @@ pt-BR:
       location: Localização
       description: Descrição
     index:
+      title_top: Lista dos quartos cadastrados
       title: Título
       location: Localização
       description: Descrição
 
   home:
     index:
-      title:  Quartos recem postados    
+      title: Quartos recem postados    
 
   links:
     back: Voltar
@@ -49,7 +51,7 @@ activerecord:
   attributes:
     user:
       bio: Biografia
-      email: Email
+      email: E-mail
       full_name: Nome completo
       location: Localização
       password: Senha
@@ -263,5 +265,4 @@ activerecord:
       long: ! '%d de %B de %Y, %H:%M'
       short: ! '%d de %B, %H:%M'
     pm: ''
-
 
