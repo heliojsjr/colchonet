@@ -43,6 +43,9 @@ pt-BR:
       confirm_link_html: 'Para você começar a usar o site,
         acesse o link: %{link}'
       thanks_html: 'Obrigado por se cadastrar no %{link}.'
+  
+  confirmations:
+    success: Email confirmado com sucesso, obrigado!
 
   links:
     back: Voltar
