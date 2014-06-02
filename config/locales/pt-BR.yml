@@ -11,6 +11,9 @@ pt-BR:
       bio: "Bio: %{bio}"
       email: E-mail
 
+  dialogs:
+    destroy: 'Você tem certeza que quer remover?'
+
   rooms:
     new:
       title: Cadastro
@@ -21,10 +24,13 @@ pt-BR:
       location: Localização
       description: Descrição
     index:
-      title_top: Lista dos quartos cadastrados
-      title: Título
+      title: Quartos disponíveis
       location: Localização
       description: Descrição
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: 'Editar'
+      destroy: 'Remove'
 
   home:
     index:
@@ -53,8 +59,14 @@ pt-BR:
       sign_up: 'Cadastre-se'
 
   flash:
+    alert:
+      needs_login: "Você precisa estar logado para continuar"
     notice:
-      signed_in: Login realizado com sucesso.
+      signed_in: "Login efetuado com sucesso."
+      signed_out: "Logout efetuado com sucesso. Até logo!"
+      already_logged_in: "Você já está logado."
+      room_created: "Quarto criado com sucesso!"
+      room_update: "Quarto atualizado com sucesso!"
 
   links:
     back: Voltar
@@ -65,7 +77,11 @@ pt-BR:
 
   layout:
     rooms: Quartos
+    new_room: Cadastre seu quarto!
     signup: Cadastro
+    signin: Login
+    my_profile: Meu perfil
+    signout: Logout
 
   general:
     form_error: Há erros no formulário, por favor verifique.

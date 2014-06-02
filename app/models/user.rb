@@ -1,7 +1,10 @@
 class User < ActiveRecord::Base
-      
+  scope :most_recent, -> { order('created_at DESC') }
+
   EMAIL_REGEXP = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
   
+  has_many :rooms
+
   scope :confirmed, -> { where.not(confirmed_at: nil) }
 
   validates_presence_of :email, :full_name, :location
